@@ -149,10 +149,11 @@ def init_client_window():
     save_btn.place(x=700, y=440, anchor='nw')
 
     # 添加说明
-    intro_lb = ttk.Label(main_win, text='注意：\n（1）在使用本程序前，请先将需要批处理的文件放入一个文件夹中。\n'
-                                        '（2）程序会将文件夹中的文件一次性上传，请保证文件夹中是一类文件。\n'
-                                        '（3）emotion的文件类型为"默认类型"\n'
-                                        '（4）发现问题可保存日志到文件，文件存储位置可自定义指定', font=('楷体', 12))
+    intro_lb = ttk.Label(main_win, text='注意：\n（1）在使用本程序前，请先将需要批处理的同类文件放入一个文件夹中\n'
+                                        '（2）程序会将文件夹中的文件一次性上传覆盖，请保证文件夹中是一类文件\n'
+                                        '（3）美术资源支持scene/character/objects/clothes, bundle资源支持除emotion之外的资源\n'
+                                        '（4）emotion的文件类型为"默认类型"，floor-plan只有scene资源支持\n'
+                                        '（5）发现问题可保存日志到文件，文件存储位置可自定义指定', font=('楷体', 12))
     intro_lb.place(x=10, y=500, anchor='nw')
 
     # 日志输出重定向

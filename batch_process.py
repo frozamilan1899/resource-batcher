@@ -83,6 +83,19 @@ def read_file(batch_files_dir, file_name):
     return '', ''
 
 
+def delete_file_func(base_url, resource_type, resourceId):
+    try:
+        print("delete " + resource_type + " resourceId:", resourceId)
+        api = resource_type + "/" + resourceId + "/file"
+        url = base_url + api
+        response = requests.delete(url)
+        data = json.loads(response.text).get('data')
+        print(data.get(resourceId))
+    except Exception as e:
+        print("something gets wrong:", e)
+        traceback.print_exc()
+
+
 def upload_preview(base_url, resource_type, batch_files_dir):
     resources = get_resource_data(base_url, resource_type)
     if resources is None:
