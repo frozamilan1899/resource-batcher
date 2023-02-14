@@ -151,7 +151,7 @@ def init_client_window():
     # 添加说明
     intro_lb = ttk.Label(main_win, text='注意：\n（1）在使用本程序前，请先将需要批处理的文件放入一个文件夹中。\n'
                                         '（2）程序会将文件夹中的文件一次性上传，请保证文件夹中是一类文件。\n'
-                                        '（3）action、motion、emotion的文件类型为"默认类型"\n'
+                                        '（3）emotion的文件类型为"默认类型"\n'
                                         '（4）发现问题可保存日志到文件，文件存储位置可自定义指定', font=('楷体', 12))
     intro_lb.place(x=10, y=500, anchor='nw')
 

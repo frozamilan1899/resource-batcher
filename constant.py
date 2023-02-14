@@ -1,6 +1,6 @@
 
 # 老版资源服务，dev环境
-old_srv_dev = "http://3.82.172.202:8060/resource/"
+old_srv_dev = "http://3.89.74.191:8060/resource/"
 # 老版资源服务，prod环境
 old_srv_prod = "https://resource-prod-minestory.minestudio.us/resource/"
 # 新版资源服务，dev环境
